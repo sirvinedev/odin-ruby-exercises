@@ -1,4 +1,4 @@
-def ceaser_cipher(str, shift)
+def caeser_cipher(str, shift)
   result = ""
   str.each_byte do |char|
     if char.between?(65, 90) || char.between?(97, 122)
@@ -11,5 +11,5 @@ def ceaser_cipher(str, shift)
   result
 end
 
-puts ceaser_cipher("Hello World!", 26)
-puts ceaser_cipher("THE quick BROWN fox JUMPED over THE lazy DOG", 26)
+puts caeser_cipher("Hello World!", 26)
+puts caeser_cipher("THE quick BROWN fox JUMPED over THE lazy DOG", 26)
