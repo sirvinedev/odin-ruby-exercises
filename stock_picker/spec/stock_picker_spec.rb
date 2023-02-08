@@ -1,4 +1,6 @@
-require_relative "../stock_picker"
+# frozen_string_literal: true
+
+require_relative '../stock_picker'
 
 RSpec.describe 'Stock Picker' do
   describe 'valid tests' do
