@@ -15,5 +15,9 @@ RSpec.describe 'Stock Picker' do
     it 'finds correct indexes when you can to buy before you can sell' do
       expect(stock_picker([8, 22, 4, 5, 4, 5, 12, 11, 6, 19, 8])).to eq([2, 9])
     end
+
+    it 'finds no indexes if array is sorted in descending order' do
+      expect(stock_picker([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])).to eq([])
+    end
   end
 end
