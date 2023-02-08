@@ -1,5 +1,5 @@
 # odin-ruby-exercises
-Cpmpleted solutions for [The Odin Project's Ruby course](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby) exercises.
+Completed solutions for [The Odin Project's Ruby course](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby) exercises.
 
 ## Project: Caeser Cipher
 Implement a caesar cipher that takes in a string and the shift factor and then outputs the modified string.
