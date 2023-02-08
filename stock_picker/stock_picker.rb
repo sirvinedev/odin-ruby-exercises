@@ -3,7 +3,7 @@
 def stock_picker(arr)
   # arr1 = arr.each_with_index.to_a.combination(2).select {|buy, sell| buy[0] < sell[0]}
   # max_profit = arr1.collect {|elem| elem[1][0] - elem[0][0]}.max
-  # arr2 = arr1.find {|elem| elem[1][0] - elem[0][0] == max_profit}.map {|elem| elem[1]}
+  # arr1.find {|elem| elem[1][0] - elem[0][0] == max_profit}.map {|elem| elem[1]}
   arr.each_with_index
      .to_a
      .combination(2)
