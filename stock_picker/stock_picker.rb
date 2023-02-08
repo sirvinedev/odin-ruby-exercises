@@ -3,8 +3,6 @@
 def stock_picker(arr)
   return [] if arr == arr.sort.reverse
 
-  # arr1 = arr.each_with_index.to_a.combination(2).select { |buy, sell| buy[0] < sell[0] }
-  # arr1.collect { |elem| elem[1][0] - elem[0][0] }.max.map { |elem| elem[1] }
   arr.each_with_index
      .to_a
      .combination(2)
