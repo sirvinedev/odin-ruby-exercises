@@ -6,6 +6,11 @@ RSpec.describe 'Sub Strings' do
       words = ['good', 'morning', 'hello', 'world']
       expect(sub_strings("hello world", words)).to eq({"hello" => 1, "world" => 1})
     end
+
+    it 'finds expected words more than once' do
+      words = ['good', 'morning', 'hello', 'world', 'l']
+      expect(sub_strings("hello world", words)).to eq({"hello" => 1, "world" => 1, "l" => 3})
+    end
   end
 
   describe 'upper case' do
