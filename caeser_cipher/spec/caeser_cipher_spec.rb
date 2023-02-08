@@ -19,10 +19,17 @@ RSpec.describe 'Ceaser Cipher' do
       end
     end
   
-    describe 'mixed case exercises with large shift' do
-      it 'returns the original string due to shift by 26 values' do
+    describe 'mixed case exercises with large shift <= 26' do
+      it 'returns the original string due to shift by <= 26 values' do
         expect(caeser_cipher("THE quick BROWN fox JUMPED over THE lazy DOG", 26))
           .to eq("THE quick BROWN fox JUMPED over THE lazy DOG")
+      end
+    end
+  
+    describe 'mixed case exercises with large shift > 26' do
+      it 'returns the original string due to shift by > 26 values' do
+        expect(caeser_cipher("THE quick BROWN fox JUMPED over THE lazy DOG", 79))
+          .to eq("UIF rvjdl CSPXO gpy KVNQFE pwfs UIF mbaz EPH")
       end
     end
   
